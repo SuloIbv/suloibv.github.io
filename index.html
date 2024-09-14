@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Saul Ibaven</title>
+    <title>Engineer Portfolio - John Doe</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #0b0f1e;
-            color: white;
+            font-family: 'Helvetica', sans-serif;
+            background-color: #f5f2e7;
+            color: #333;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -21,6 +21,10 @@
         header {
             text-align: center;
             padding: 30px 0;
+            background: #d4b895;
+            width: 100%;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .container {
@@ -28,18 +32,20 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
+            background: #fff;
+            border: 1px solid #e6e2d3;
             border-radius: 10px;
-            box-shadow: 0px 0px 30px 5px #0ff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
 
         .profile-photo {
             margin: 0 auto;
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             overflow: hidden;
-            border: 4px solid #0ff;
+            border: 4px solid #d4b895;
+            background-color: #fff;
         }
 
         .profile-photo img {
@@ -50,17 +56,18 @@
 
         h1 {
             font-size: 3em;
-            color: #0ff;
-            text-transform: uppercase;
+            color: #333;
             margin-top: 20px;
+            font-family: 'Noto Serif JP', serif;
         }
 
         h2 {
             font-size: 2em;
-            border-bottom: 2px solid #0ff;
             padding-bottom: 10px;
             margin-bottom: 20px;
-            color: #0ff;
+            color: #5a3826;
+            font-family: 'Noto Serif JP', serif;
+            border-bottom: 2px solid #d4b895;
         }
 
         .achievements, .skills, .contact {
@@ -75,13 +82,28 @@
         ul li {
             margin: 10px 0;
             font-size: 1.2em;
+            line-height: 1.6em;
+            font-family: 'Noto Serif JP', serif;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        a {
+            color: #5a3826;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         footer {
             padding: 20px;
             text-align: center;
-            background-color: #0b0f1e;
-            border-top: 2px solid #0ff;
+            background-color: #d4b895;
             width: 100%;
             position: relative;
             bottom: 0;
@@ -90,65 +112,90 @@
 
         footer p {
             font-size: 1em;
-            color: #aaa;
+            color: #333;
         }
 
-        a {
-            color: #0ff;
-            text-decoration: none;
+        /* Decorative elements */
+        .divider {
+            border-bottom: 2px solid #d4b895;
+            margin: 40px 0;
+            width: 80%;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .japanese-pattern {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .japanese-pattern img {
+            width: 100px;
+            opacity: 0.3;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
         }
     </style>
 </head>
 
 <body>
+
     <header>
         <div class="profile-photo">
             <img src="your-photo.jpg" alt="Profile Photo">
         </div>
         <h1>John Doe</h1>
-        <p>Senior Engineer | Technology Enthusiast</p>
+        <p>技術者 | テクノロジー愛好家</p>
     </header>
 
     <div class="container">
         <!-- Achievements Section -->
         <section class="achievements">
-            <h2>Achievements</h2>
+            <h2>実績 (Achievements)</h2>
             <ul>
-                <li>Lead Engineer in the successful launch of XYZ Satellite in 2022</li>
-                <li>Developed an advanced AI system for autonomous vehicles</li>
-                <li>Awarded "Engineer of the Year" by ABC Engineering Society</li>
-                <li>Published 10 research papers on renewable energy solutions</li>
-                <li>Speaker at International Technology Conference 2023</li>
+                <li>2022年、XYZ衛星の成功打ち上げのリードエンジニア</li>
+                <li>自動運転車向けの高度なAIシステムを開発</li>
+                <li>ABCエンジニアリング協会の「年間最優秀エンジニア」賞を受賞</li>
+                <li>再生可能エネルギーソリューションに関する10の研究論文を発表</li>
+                <li>2023年国際技術会議の講演者</li>
             </ul>
         </section>
+
+        <!-- Decorative Pattern -->
+        <div class="divider"></div>
+        <div class="japanese-pattern">
+            <img src="japanese-pattern.png" alt="Pattern">
+        </div>
 
         <!-- Skills Section -->
         <section class="skills">
-            <h2>Skills</h2>
+            <h2>スキル (Skills)</h2>
             <ul>
-                <li>Advanced Robotics & AI</li>
-                <li>Satellite Communication Systems</li>
-                <li>Project Management & Leadership</li>
-                <li>Machine Learning & Data Analysis</li>
-                <li>Coding: Python, C++, MATLAB</li>
+                <li>高度なロボティクスとAI</li>
+                <li>衛星通信システム</li>
+                <li>プロジェクト管理およびリーダーシップ</li>
+                <li>機械学習とデータ分析</li>
+                <li>プログラミング: Python、C++、MATLAB</li>
             </ul>
         </section>
 
+        <div class="divider"></div>
+
         <!-- Contact Section -->
         <section class="contact">
-            <h2>Contact Information</h2>
+            <h2>連絡先 (Contact Information)</h2>
             <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
             <p>LinkedIn: <a href="https://linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
         </section>
     </div>
 
     <footer>
-        <p>© 2024 John Doe | All Rights Reserved</p>
+        <p>© 2024 John Doe | 全著作権所有</p>
     </footer>
+
 </body>
 
 </html>
